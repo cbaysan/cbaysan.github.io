@@ -1,0 +1,247 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #222;
+  background: #fff;
+}
+
+/* ── Navigation ── */
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 0 1.5rem;
+}
+
+nav {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-name {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  color: #1a3a6b;
+}
+
+/* ── Page layout ── */
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+/* ── Home: bio ── */
+.bio {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: start;
+}
+
+.bio-text h1 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.bio-text .title {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.15rem;
+}
+
+.bio-text .fields {
+  margin: 1.1rem 0 0.9rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.affiliations {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.contact {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.9;
+}
+
+.contact a {
+  color: #1a3a6b;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.bio-photo img {
+  width: 120px;
+  border-radius: 3px;
+  display: block;
+}
+
+/* ── Research page ── */
+.page-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  color: #111;
+}
+
+.research-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.paper {
+  margin-bottom: 1.75rem;
+}
+
+.paper-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a3a6b;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.paper-title:hover {
+  text-decoration: underline;
+}
+
+span.paper-title {
+  color: #222;
+}
+
+.paper-meta {
+  font-size: 0.88rem;
+  color: #666;
+  margin: 0.2rem 0 0.35rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.paper-links {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.85rem;
+}
+
+.paper-links a {
+  color: #1a3a6b;
+  text-decoration: none;
+  margin-right: 0.85rem;
+  border: 1px solid #c5d0e0;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+}
+
+.paper-links a:hover {
+  background: #f0f4f9;
+}
+
+/* ── CV page ── */
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section h2 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+.cv-section p,
+.cv-section li {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.cv-section ul {
+  padding-left: 1.2rem;
+}
+
+.cv-link {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  color: #1a3a6b;
+  text-decoration: none;
+}
+
+.cv-link:hover { text-decoration: underline; }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  color: #aaa;
+  border-top: 1px solid #eee;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .bio {
+    grid-template-columns: 1fr;
+  }
+  .bio-photo {
+    order: -1;
+  }
+  .bio-photo img {
+    width: 120px;
+  }
+}
