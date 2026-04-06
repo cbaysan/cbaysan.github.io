@@ -116,6 +116,14 @@ main {
   display: block;
 }
 
+.photo-credit {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.7rem;
+  color: #aaa;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
 /* ── Research page ── */
 .page-title {
   font-family: system-ui, -apple-system, sans-serif;
