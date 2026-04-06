@@ -110,8 +110,12 @@ main {
   text-decoration: underline;
 }
 
+.bio-photo {
+  width: 150px;
+}
+
 .bio-photo img {
-  width: 120px;
+  width: 150px;
   border-radius: 3px;
   display: block;
 }
@@ -122,6 +126,7 @@ main {
   color: #aaa;
   margin-top: 0.4rem;
   text-align: center;
+  width: 150px;
 }
 
 /* ── Research page ── */
