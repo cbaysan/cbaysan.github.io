@@ -199,6 +199,38 @@ span.paper-title {
   background: #f0f4f9;
 }
 
+.paper-abstract {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.88rem;
+  margin-top: 0.35rem;
+}
+
+.paper-abstract summary {
+  color: #1a3a6b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85rem;
+  border: 1px solid #c5d0e0;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  list-style: none;
+}
+
+.paper-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-abstract summary:hover {
+  background: #f0f4f9;
+}
+
+.paper-abstract p {
+  color: #444;
+  line-height: 1.55;
+  max-width: 46rem;
+  margin: 0.75rem 0 0;
+}
+
 /* ── CV page ── */
 .cv-section {
   margin-bottom: 2.5rem;
